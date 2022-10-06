@@ -15,6 +15,7 @@ function App() {
   const onNumberClick = (number) => {
     if (isOperantClick) {
       setPressedNumber("")
+      setIsOperantClick(false)
     }
 
     if (pressedNumber === "0"){
