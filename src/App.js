@@ -86,6 +86,12 @@ function App() {
   }
 
 
+  const changeSign = () => {
+    let pressedNumberFloat = parseFloat(pressedNumber)
+    setPressedNumber(parseFloat(pressedNumberFloat * -1))
+  }
+
+
   return (
     <div className="App">
       <div className="output">
@@ -99,7 +105,7 @@ function App() {
           <span>AC</span>
         </div>
 
-        <div className="grid-button" onClick={() => { setAnswer((value) => value * -1) }}>
+        <div className="grid-button" onClick={() => { changeSign() }}>
           <span>+/-</span>
         </div>
 
