@@ -1,6 +1,6 @@
 import './App.css';
 
-import {useState } from 'react';
+import { useState } from 'react';
 
 function App() {
 
@@ -76,6 +76,7 @@ function App() {
     setIsOperantClick(false)
     setIsFirstNumber(true)
   }
+
 
   const clear = () => {
     setAnswer(0)
